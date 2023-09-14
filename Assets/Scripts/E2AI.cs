@@ -13,7 +13,7 @@ public class E2AI : MonoBehaviour
     GameObject rocket;// Name of rocket projecctile
 
 
-    float speed = 7f;//Speed of the ship
+    float speed = 110f;//Speed of the ship
 
 
     /// <summary>
@@ -67,7 +67,7 @@ public class E2AI : MonoBehaviour
         if (!inRange)// if inRange is not false the ship stops moving towardsthe homebase
         {
             //Debug.Log("this is being reached");
-            this.transform.position = Vector3.MoveTowards(transform.position, new Vector3((Target.transform.position.x - 20), 0, 0), move);// the stoping distance is an offset of where the HomeBase is.
+            this.transform.position = Vector3.MoveTowards(transform.position, new Vector3((Target.transform.position.x - 600), Random.Range(-3500, 3500), (Target.transform.position.z)), move);// the stoping distance is an offset of where the HomeBase is.
         }
 
         time += Time.deltaTime;//Updating time...

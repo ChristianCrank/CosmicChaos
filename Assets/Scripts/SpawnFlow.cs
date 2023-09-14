@@ -5,14 +5,15 @@ using TMPro;
 
 public class SpawnFlow : MonoBehaviour
 {
-    public TextMeshProUGUI text; //For testing (can be commented out if out)
+    //public TextMeshProUGUI text; //For testing (can be commented out if out)
     public Transform[] bigShipSpawn; // Array of transforms where big ship spawn
     public GameObject bigShip; //Big Ship
 
     public Transform[] smallShipSpawn; //Array of transforms where small ships spawn
     public GameObject smallShip; //Small Ship
 
-    float timer;
+    [SerializeField]float timer;
+    [SerializeField] float setTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,8 @@ public class SpawnFlow : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        text.text = "Time: " + timer;
-        if (timer > 10.000f) // Basic set up to spawn ships every 10 seconds
+        //text.text = "Time: " + timer;
+        if (timer > setTime) // Basic set up to spawn ships every 10 seconds
         {
             SpawnShips();
         }
