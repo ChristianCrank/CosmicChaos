@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043454535, g: 0.044621818, b: 0.0595668, a: 1}
+  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -384,6 +384,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -11.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &280975849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7130293731035720816, guid: 0daf96c15d4c97b4e9e526f6acfce2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 322112275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &280975853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280975849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25237054, y: 0.25218534, z: 0.04910751}
+  m_Center: {x: 0.00058522087, y: 0.00018527359, z: -0.0017528511}
 --- !u!1 &294404737
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +842,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521767192}
   m_CullTransparentMesh: 1
+--- !u!1 &570922248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8307603157612568338, guid: 0daf96c15d4c97b4e9e526f6acfce2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 322112275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &570922250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570922248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.219309, y: 25.755417, z: 3.9474564}
+  m_Center: {x: -0.062304683, y: -0.061221316, z: -1.4737291}
 --- !u!1 &582377662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1661,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
+  far clip plane: 10000
   field of view: 50
   orthographic: 0
   orthographic size: 10
@@ -1649,9 +1687,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.056713674, y: -0.15217486, z: -0.0087468475, w: 0.98668635}
+  m_LocalRotation: {x: -0.062066756, y: -0.12335545, z: -0.007730567, w: 0.9903895}
   m_LocalPosition: {x: 1051, y: 0, z: -1980}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.31, y: 1, z: 1.39}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1049854338}
@@ -3041,7 +3079,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551135385}
-  m_LocalRotation: {x: -0.056713674, y: -0.15217486, z: -0.0087468475, w: 0.98668635}
+  m_LocalRotation: {x: -0.062066756, y: -0.12335545, z: -0.007730567, w: 0.9903895}
   m_LocalPosition: {x: 1051, y: 0, z: -1980}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -3074,7 +3112,7 @@ MonoBehaviour:
     FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 10000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
