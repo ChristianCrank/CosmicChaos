@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 762759126624946824}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 20.59, y: -1.01, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,3 +112,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025887d3dec79f44a8ae3814e635059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketSpawn: {fileID: 4381585424162502811}
+  rocket: {fileID: 6364636369183605246, guid: 464a5cfac8eeac74db0c602144ef6bcd, type: 3}

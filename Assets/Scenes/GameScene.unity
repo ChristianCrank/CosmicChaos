@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043454535, g: 0.044621818, b: 0.0595668, a: 1}
+  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -386,6 +386,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
+--- !u!1 &391281418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8307603157612568338, guid: 0daf96c15d4c97b4e9e526f6acfce2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 322112275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &391281420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391281418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.320257, y: 25.243044, z: 3.974447}
+  m_Center: {x: 0.2606852, y: 0.06576742, z: -1.4872246}
+--- !u!114 &391281421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391281418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451661aba2a82f54d8ed6368486dff06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &483761861
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +708,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.14215294, y: 0.05350413, z: 0.007695283, w: 0.9883677}
+  m_LocalRotation: {x: -0.062066767, y: -0.123355456, z: -0.0077305688, w: 0.9903895}
   m_LocalPosition: {x: 1051, y: 0, z: -1980}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -825,7 +857,7 @@ MonoBehaviour:
   smallShip: {fileID: 762759126624946824, guid: af78f34b1f8c76940a6cf2555205b50c,
     type: 3}
   timer: 0
-  setTime: 20
+  setTime: 10
 --- !u!4 &1065068663
 Transform:
   m_ObjectHideFlags: 0
@@ -1197,7 +1229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551135385}
-  m_LocalRotation: {x: -0.14215294, y: 0.05350413, z: 0.007695283, w: 0.9883677}
+  m_LocalRotation: {x: -0.062066767, y: -0.123355456, z: -0.0077305688, w: 0.9903895}
   m_LocalPosition: {x: 1051, y: 0, z: -1980}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0

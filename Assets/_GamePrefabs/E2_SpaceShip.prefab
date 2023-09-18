@@ -112,3 +112,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd5b22ba2757924dbaffce61d4ae23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketSpawn: {fileID: 6583405463896901969}
+  rocket: {fileID: 6364636369183605246, guid: 464a5cfac8eeac74db0c602144ef6bcd, type: 3}

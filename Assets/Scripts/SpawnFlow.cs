@@ -17,7 +17,7 @@ public class SpawnFlow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        SpawnShips();
     }
 
     // Update is called once per frame
