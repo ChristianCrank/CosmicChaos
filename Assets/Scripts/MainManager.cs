@@ -16,8 +16,8 @@ public class MainManager : MonoBehaviour
 
     public static MainManager Instance;
 
-    float backgroundVolume;
-    float soundFX;
+    [SerializeField] public float backgroundVolume;
+    [SerializeField] public float soundFX;
 
 
 
@@ -40,8 +40,8 @@ public class MainManager : MonoBehaviour
 
     private void Update()
     {
-        soundFX = sfx.value;
-        backgroundVolume = backsfx.value;
+       MainManager.Instance.soundFX = sfx.value;
+        MainManager.Instance.backgroundVolume = backsfx.value;
     }
 
     public void switch_scenes()
