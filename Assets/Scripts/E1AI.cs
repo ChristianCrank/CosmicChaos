@@ -9,8 +9,8 @@ public class E1AI : MonoBehaviour
     bool inRange = false;//InRange is trueif the spaceship is within a certain distance of the spaceship
 
     float time;//Basic timer to control how fast the ship shoots
-    Transform rocketSpawn;// Location where the rocket will shoot 
-    GameObject rocket;// Name of rocket projecctile
+    public Transform rocketSpawn;// Location where the rocket will shoot 
+    public GameObject rocket;// Name of rocket projecctile
 
 
     float speed = 150f;//Speed of the ship
@@ -25,7 +25,7 @@ public class E1AI : MonoBehaviour
         {
             time = 0;
             transform.LookAt(Target.transform);
-            Instantiate(rocket, rocketSpawn.position, rocketSpawn.rotation);
+            Instantiate(rocket, rocketSpawn.transform.position + (transform.forward*100), rocketSpawn.transform.rotation);
         }
     }
 
@@ -59,7 +59,7 @@ public class E1AI : MonoBehaviour
         distance = Vector3.Distance(Target.transform.position, this.transform.position);//distance between the ship is constantly calculated
 
 
-        if (distance <= 5) // If distance is less than 5, the scripts sets inRange to true which procs another statement and the ship begins to shoot
+        if (distance <= 800) // If distance is less than 5, the scripts sets inRange to true which procs another statement and the ship begins to shoot
         {
             inRange = true;
             Shoot();

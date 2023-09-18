@@ -126,3 +126,5 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.72, y: 3.35, z: 1.5}
   m_Center: {x: 0, y: 0.48, z: 0.19}
+  rocketSpawn: {fileID: 6583405463896901969}
+  rocket: {fileID: 992275350269025169, guid: aa96c7a7bc527594d954b6cc5c27765c, type: 3}

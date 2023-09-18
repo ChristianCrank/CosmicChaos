@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ProgressBar/How to use this asset.pdf.meta
 guid: 38ea45d6cfa8ab04da74a454ff0706aa
+========
+guid: 1b8d251f9af63b746bf2f7ffe00ebb9b
+>>>>>>>> c99fd2fc7d5dac92e6ecac818c9f384f8e12e649:Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
