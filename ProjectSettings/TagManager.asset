@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - HomeBase
+  - SmallShip
+  - BigShip
   layers:
   - Default
   - TransparentFX
@@ -12,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Processing
   - 
   - 
   - 

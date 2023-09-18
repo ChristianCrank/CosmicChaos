@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Christian 
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private FixedJoystick joystick;
@@ -19,9 +20,13 @@ public class CameraController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Makes the joystick move the crosshair based on the cameraSpeed variable
+    /// Anchors the crosshair within screen bounds
+    /// </summary>
     private void LateUpdate()
     {
-        crosshair.transform.localPosition += new Vector3(joystick.Direction.x * cameraSpeed, joystick.Direction.y * cameraSpeed, 0);
+        crosshair.transform.localPosition += new Vector3(joystick.Horizontal * cameraSpeed, joystick.Vertical * cameraSpeed, 0);
 
         Vector2 crossAnchor = crossTrans.anchoredPosition;
         float xpos = crossAnchor.x;
