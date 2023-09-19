@@ -32,8 +32,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 23.5, y: -1.01, z: -0}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_LocalPosition: {x: 20.59, y: -1.01, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,6 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025887d3dec79f44a8ae3814e635059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketSpawn: {fileID: 4381585424162502811}
+  rocket: {fileID: 992275350269025169, guid: aa96c7a7bc527594d954b6cc5c27765c, type: 3}
 --- !u!136 &-5048457021280293949
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -146,5 +146,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
-  rocketSpawn: {fileID: 4381585424162502811}
-  rocket: {fileID: 992275350269025169, guid: aa96c7a7bc527594d954b6cc5c27765c, type: 3}

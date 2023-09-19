@@ -36,11 +36,11 @@ public class Weapons : MonoBehaviour
     private void LaserActivate()
     {
         laser.enabled = true;
-        if(!soundPlayed)
+        /*if(!soundPlayed)
         {
             audioSources[0].Play();
             soundPlayed = true;
-        }
+        }*/
     }
 
     /// <summary>
@@ -107,14 +107,11 @@ public class Weapons : MonoBehaviour
 
             Ray ray = new Ray(gunSpawn.localPosition + laserOffset, worldDirection);
 
-            ray.origin = ray.GetPoint(maxDistance);
-            ray.direction = -ray.direction;
-
             laser.SetPosition(0, gunSpawn.localPosition + laserOffset);
             laser.SetPosition(1, localDirection);
             
 
-            if (Physics.Raycast(ray, out RaycastHit hit, maxDistance))
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 Debug.Log(hit.transform.gameObject.name);
                 if (hit.collider.tag == "SmallShip")

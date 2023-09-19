@@ -6,7 +6,7 @@ public class Missile : MonoBehaviour
 {
     private void Update()
     {
-        transform.Translate(0, 0, 2);
+        transform.Translate(0, 0, 1);
     }
 
     private void OnCollisionEnter(Collision collision)

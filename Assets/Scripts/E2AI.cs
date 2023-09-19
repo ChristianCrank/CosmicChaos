@@ -37,7 +37,6 @@ public class E2AI : MonoBehaviour
     void Awake()
     {
         Target = GameObject.FindGameObjectWithTag("HomeBase");
-        Debug.Log("Name: " + Target.name);
     }
 
 

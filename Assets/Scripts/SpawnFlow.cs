@@ -34,12 +34,10 @@ public class SpawnFlow : MonoBehaviour
 
     void SpawnShips()
     {
-        Debug.Log("Spawning Big Ships");
         Instantiate(bigShip, bigShipSpawn[0].position, bigShipSpawn[0].rotation);
         Instantiate(bigShip, bigShipSpawn[1].position, bigShipSpawn[1].rotation);
         Instantiate(bigShip, bigShipSpawn[2].position, bigShipSpawn[2].rotation);
 
-        Debug.Log("Spawning Small Ships");
         Instantiate(smallShip, smallShipSpawn[0].position, smallShipSpawn[0].rotation);
         Instantiate(smallShip, smallShipSpawn[1].position, smallShipSpawn[1].rotation);
         Instantiate(smallShip, smallShipSpawn[2].position, smallShipSpawn[2].rotation);
